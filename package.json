@@ -1,0 +1,30 @@
+{
+  "name": "FyzioVojta",
+  "version": "0.0.1",
+  "dependencies": {
+    "bower": "latest",
+    "del": "latest",
+    "event-stream": "latest",
+    "gulp": "latest",
+    "gulp-autopolyfiller": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-order": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-watch": "latest",
+    "gulp.spritesmith": "latest",
+    "path": "latest",
+    "run-sequence": "latest"
+  },
+  "description": "Web Skeleton",
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Onlio, a.s.",
+  "license": "BSD-2-Clause",
+  "private": true
+}

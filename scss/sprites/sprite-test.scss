@@ -1,0 +1,167 @@
+/* Použití:
+** 
+** .icon-social{
+**     @include sprite ($social);
+**     &:hover{
+**         @include sprite-hover ($social-hover);
+**     }
+** }
+**
+*/
+
+$spritePath: "../img/sprite-test.png";
+
+$basket-hover-name: 'basket-hover';
+$basket-hover-x: 0px;
+$basket-hover-y: 0px;
+$basket-hover-offset-x: 0px;
+$basket-hover-offset-y: 0px;
+$basket-hover-width: 16px;
+$basket-hover-height: 16px;
+$basket-hover-total-width: 64px;
+$basket-hover-total-height: 48px;
+$basket-hover-image: 'sprite.png';
+$basket-hover: (0px, 0px, 0px, 0px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'basket-hover');
+$basket-name: 'basket';
+$basket-x: 16px;
+$basket-y: 0px;
+$basket-offset-x: -16px;
+$basket-offset-y: 0px;
+$basket-width: 16px;
+$basket-height: 16px;
+$basket-total-width: 64px;
+$basket-total-height: 48px;
+$basket-image: 'sprite.png';
+$basket: (16px, 0px, -16px, 0px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'basket');
+$home-hover-name: 'home-hover';
+$home-hover-x: 0px;
+$home-hover-y: 16px;
+$home-hover-offset-x: 0px;
+$home-hover-offset-y: -16px;
+$home-hover-width: 16px;
+$home-hover-height: 16px;
+$home-hover-total-width: 64px;
+$home-hover-total-height: 48px;
+$home-hover-image: 'sprite.png';
+$home-hover: (0px, 16px, 0px, -16px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'home-hover');
+$home-name: 'home';
+$home-x: 16px;
+$home-y: 16px;
+$home-offset-x: -16px;
+$home-offset-y: -16px;
+$home-width: 16px;
+$home-height: 16px;
+$home-total-width: 64px;
+$home-total-height: 48px;
+$home-image: 'sprite.png';
+$home: (16px, 16px, -16px, -16px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'home');
+$instagram-hover-name: 'instagram-hover';
+$instagram-hover-x: 32px;
+$instagram-hover-y: 0px;
+$instagram-hover-offset-x: -32px;
+$instagram-hover-offset-y: 0px;
+$instagram-hover-width: 16px;
+$instagram-hover-height: 16px;
+$instagram-hover-total-width: 64px;
+$instagram-hover-total-height: 48px;
+$instagram-hover-image: 'sprite.png';
+$instagram-hover: (32px, 0px, -32px, 0px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'instagram-hover');
+$instagram-name: 'instagram';
+$instagram-x: 32px;
+$instagram-y: 16px;
+$instagram-offset-x: -32px;
+$instagram-offset-y: -16px;
+$instagram-width: 16px;
+$instagram-height: 16px;
+$instagram-total-width: 64px;
+$instagram-total-height: 48px;
+$instagram-image: 'sprite.png';
+$instagram: (32px, 16px, -32px, -16px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'instagram');
+$map-hover-name: 'map-hover';
+$map-hover-x: 0px;
+$map-hover-y: 32px;
+$map-hover-offset-x: 0px;
+$map-hover-offset-y: -32px;
+$map-hover-width: 16px;
+$map-hover-height: 16px;
+$map-hover-total-width: 64px;
+$map-hover-total-height: 48px;
+$map-hover-image: 'sprite.png';
+$map-hover: (0px, 32px, 0px, -32px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'map-hover');
+$map-name: 'map';
+$map-x: 16px;
+$map-y: 32px;
+$map-offset-x: -16px;
+$map-offset-y: -32px;
+$map-width: 16px;
+$map-height: 16px;
+$map-total-width: 64px;
+$map-total-height: 48px;
+$map-image: 'sprite.png';
+$map: (16px, 32px, -16px, -32px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'map');
+$social-hover-name: 'social-hover';
+$social-hover-x: 32px;
+$social-hover-y: 32px;
+$social-hover-offset-x: -32px;
+$social-hover-offset-y: -32px;
+$social-hover-width: 16px;
+$social-hover-height: 16px;
+$social-hover-total-width: 64px;
+$social-hover-total-height: 48px;
+$social-hover-image: 'sprite.png';
+$social-hover: (32px, 32px, -32px, -32px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'social-hover');
+$social-name: 'social';
+$social-x: 48px;
+$social-y: 0px;
+$social-offset-x: -48px;
+$social-offset-y: 0px;
+$social-width: 16px;
+$social-height: 16px;
+$social-total-width: 64px;
+$social-total-height: 48px;
+$social-image: 'sprite.png';
+$social: (48px, 0px, -48px, 0px, 16px, 16px, 64px, 48px, '#{$spritePath}', 'social');
+$spritesheet-width: 64px;
+$spritesheet-height: 48px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($basket-hover $basket $home-hover $home $instagram-hover $instagram $map-hover $map $social-hover $social );
+$spritesheet: (64px, 48px, 'sprite.png', $spritesheet-sprites);
+
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url('#{$sprite-image}');
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+@mixin sprite-hover($sprite) {
+  @include sprite-position($sprite);
+}
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

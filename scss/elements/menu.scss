@@ -1,0 +1,15 @@
+nav {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-size: 120%;
+
+	ul {
+		li {
+			display: inline;
+			a {
+				margin-left: 2ex;
+			}
+		}
+	}
+}

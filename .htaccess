@@ -1,0 +1,7 @@
+#Options +FollowSymlinks
+RewriteEngine on
+
+
+# domain redirecting
+RewriteCond %{HTTP_HOST} ^fyziovojta\.cz
+RewriteRule (.*) http://www.fyziovojta.cz/$1 [R,L]

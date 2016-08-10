@@ -1,0 +1,167 @@
+/* Použití:
+** 
+** .icon-social{
+**     @include sprite ($social);
+**     &:hover{
+**         @include sprite-hover ($social-hover);
+**     }
+** }
+**
+*/
+
+$spritePath: "../img/sprite-test2.png";
+
+$-h-t-m-l-hover-name: 'HTML-hover';
+$-h-t-m-l-hover-x: 0px;
+$-h-t-m-l-hover-y: 0px;
+$-h-t-m-l-hover-offset-x: 0px;
+$-h-t-m-l-hover-offset-y: 0px;
+$-h-t-m-l-hover-width: 32px;
+$-h-t-m-l-hover-height: 32px;
+$-h-t-m-l-hover-total-width: 128px;
+$-h-t-m-l-hover-total-height: 96px;
+$-h-t-m-l-hover-image: 'sprite.png';
+$-h-t-m-l-hover: (0px, 0px, 0px, 0px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'HTML-hover');
+$-h-t-m-l-name: 'HTML';
+$-h-t-m-l-x: 32px;
+$-h-t-m-l-y: 0px;
+$-h-t-m-l-offset-x: -32px;
+$-h-t-m-l-offset-y: 0px;
+$-h-t-m-l-width: 32px;
+$-h-t-m-l-height: 32px;
+$-h-t-m-l-total-width: 128px;
+$-h-t-m-l-total-height: 96px;
+$-h-t-m-l-image: 'sprite.png';
+$-h-t-m-l: (32px, 0px, -32px, 0px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'HTML');
+$bluetooth-hover-name: 'bluetooth-hover';
+$bluetooth-hover-x: 0px;
+$bluetooth-hover-y: 32px;
+$bluetooth-hover-offset-x: 0px;
+$bluetooth-hover-offset-y: -32px;
+$bluetooth-hover-width: 32px;
+$bluetooth-hover-height: 32px;
+$bluetooth-hover-total-width: 128px;
+$bluetooth-hover-total-height: 96px;
+$bluetooth-hover-image: 'sprite.png';
+$bluetooth-hover: (0px, 32px, 0px, -32px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'bluetooth-hover');
+$bluetooth-name: 'bluetooth';
+$bluetooth-x: 32px;
+$bluetooth-y: 32px;
+$bluetooth-offset-x: -32px;
+$bluetooth-offset-y: -32px;
+$bluetooth-width: 32px;
+$bluetooth-height: 32px;
+$bluetooth-total-width: 128px;
+$bluetooth-total-height: 96px;
+$bluetooth-image: 'sprite.png';
+$bluetooth: (32px, 32px, -32px, -32px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'bluetooth');
+$business-man-hover-name: 'business-man-hover';
+$business-man-hover-x: 64px;
+$business-man-hover-y: 0px;
+$business-man-hover-offset-x: -64px;
+$business-man-hover-offset-y: 0px;
+$business-man-hover-width: 32px;
+$business-man-hover-height: 32px;
+$business-man-hover-total-width: 128px;
+$business-man-hover-total-height: 96px;
+$business-man-hover-image: 'sprite.png';
+$business-man-hover: (64px, 0px, -64px, 0px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'business-man-hover');
+$business-man-name: 'business-man';
+$business-man-x: 64px;
+$business-man-y: 32px;
+$business-man-offset-x: -64px;
+$business-man-offset-y: -32px;
+$business-man-width: 32px;
+$business-man-height: 32px;
+$business-man-total-width: 128px;
+$business-man-total-height: 96px;
+$business-man-image: 'sprite.png';
+$business-man: (64px, 32px, -64px, -32px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'business-man');
+$certificate-hover-name: 'certificate-hover';
+$certificate-hover-x: 0px;
+$certificate-hover-y: 64px;
+$certificate-hover-offset-x: 0px;
+$certificate-hover-offset-y: -64px;
+$certificate-hover-width: 32px;
+$certificate-hover-height: 32px;
+$certificate-hover-total-width: 128px;
+$certificate-hover-total-height: 96px;
+$certificate-hover-image: 'sprite.png';
+$certificate-hover: (0px, 64px, 0px, -64px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'certificate-hover');
+$certificate-name: 'certificate';
+$certificate-x: 32px;
+$certificate-y: 64px;
+$certificate-offset-x: -32px;
+$certificate-offset-y: -64px;
+$certificate-width: 32px;
+$certificate-height: 32px;
+$certificate-total-width: 128px;
+$certificate-total-height: 96px;
+$certificate-image: 'sprite.png';
+$certificate: (32px, 64px, -32px, -64px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'certificate');
+$email-hover-name: 'email-hover';
+$email-hover-x: 64px;
+$email-hover-y: 64px;
+$email-hover-offset-x: -64px;
+$email-hover-offset-y: -64px;
+$email-hover-width: 32px;
+$email-hover-height: 32px;
+$email-hover-total-width: 128px;
+$email-hover-total-height: 96px;
+$email-hover-image: 'sprite.png';
+$email-hover: (64px, 64px, -64px, -64px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'email-hover');
+$email-name: 'email';
+$email-x: 96px;
+$email-y: 0px;
+$email-offset-x: -96px;
+$email-offset-y: 0px;
+$email-width: 32px;
+$email-height: 32px;
+$email-total-width: 128px;
+$email-total-height: 96px;
+$email-image: 'sprite.png';
+$email: (96px, 0px, -96px, 0px, 32px, 32px, 128px, 96px, '#{$spritePath}', 'email');
+$spritesheet-width: 128px;
+$spritesheet-height: 96px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($-h-t-m-l-hover $-h-t-m-l $bluetooth-hover $bluetooth $business-man-hover $business-man $certificate-hover $certificate $email-hover $email );
+$spritesheet: (128px, 96px, 'sprite.png', $spritesheet-sprites);
+
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url('#{$sprite-image}');
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+@mixin sprite-hover($sprite) {
+  @include sprite-position($sprite);
+}
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

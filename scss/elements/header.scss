@@ -1,0 +1,21 @@
+@import '../variable';
+
+header {
+	display: block;
+	padding-top: 70px;
+	text-align: center;
+	
+	h1 {
+		// width: 40%;
+		// margin: 0 auto 1em;
+		// display: block;
+	}
+
+	#profilPhoto {
+		img {
+			border-radius: 125px;
+			border: 6px solid $border-color;
+		}
+		
+	}
+}

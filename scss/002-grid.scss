@@ -1,0 +1,26 @@
+.row {
+	clear: both;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -20px 40px;
+
+	&.has1col {
+		justify-content: center;
+	}
+
+	.col {
+		margin: 0 20px 0;
+
+		& > img {
+			position: relative;
+			top: -5px;
+		}
+	}
+
+
+	&.has1col .col { width: 100%; }
+	&.has2col .col { width: 49%; }
+	&.has3col .col { width: 33%; }
+
+
+}

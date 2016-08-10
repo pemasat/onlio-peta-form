@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example 1</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.validate.min.js"></script>
+</head>
+<body>
+	<form action="#">
+		<p>
+			<label>Povinný attribut 1</label>
+			<input type="text" name="req" value="" required="require" class="require">
+		</p>
+		<p>
+			<label>Povinný attribut 2, který ale blbne</label>
+			<input type="text" name="req2" value="">
+		</p>
+		<p>
+			<label>Povinný attribut 3</label>
+			<input type="text" name="req3" value="" required="require" class="require">
+		</p>
+		<input type="submit" name="name" value="Odeslat">
+	</form>
+	<script>
+		$("form").validate();
+	</script>
+</body>
+</html>
